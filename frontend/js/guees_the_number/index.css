@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #eee;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.between {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.btn-again {
+  background-color: #ff4c68;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-again:hover {
+  background-color: #d93d58;
+}
+
+.number {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  color: #222;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  background-color: #292929;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.guess {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+.btn-check {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-check:hover {
+  background-color: #3d8b40;
+}
+
+.message {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+span {
+  font-weight: bold;
+  color: #fdd835;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .number {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .guess,
+  .btn-check {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .btn-again {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
